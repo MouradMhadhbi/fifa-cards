@@ -10,25 +10,25 @@ L’objectif est d’utiliser **React**, **React-Bootstrap** et la gestion des *
 
 ## 🏗️ Structure du projet
 
-fifa-cards/
-│
-├── src/
-│ ├── components/
-│ │ ├── Player.js # Composant individuel pour chaque joueur
-│ │ └── PlayersList.js # Liste des joueurs affichés avec .map()
-│ │
-│ ├── data/
-│ │ └── players.js # Tableau JSON contenant les données des joueurs
-│ │
-│ ├── App.css 
-│ ├── App.js # Composant racine de l’application
-│ └── index.css
-│ └── index.js # Point d’entrée React
-│
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
+    fifa-cards/
+    │
+    ├── src/
+    │ ├── components/
+    │ │ ├── Player.js # Composant individuel pour chaque joueur
+    │ │ └── PlayersList.js # Liste des joueurs affichés avec .map()
+    │ │
+    │ ├── data/
+    │ │ └── players.js # Tableau JSON contenant les données des joueurs
+    │ │
+    │ ├── App.css 
+    │ ├── App.js # Composant racine de l’application
+    │ └── index.css
+    │ └── index.js # Point d’entrée React
+    │
+    ├── .gitignore
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
 ---
 
@@ -105,7 +105,7 @@ Avec un effet de zoom au survol et une ombre douce sur la carte.
 
 ---
 
-##🧾 Auteur
+## 🧾 Auteur
 
 Mourad Mhadhbi
 Projet React – Formation Frontend

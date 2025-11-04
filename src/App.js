@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// ✅ Importation de React
+import React from "react";
+// ✅ Importation du composant PlayerList
+import PlayersList from "./components/PlayersList";
 
+// ✅ Déclaration du composant principal App
 function App() {
+  // ✅ Rendu du composant PlayerList
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* ✅ Appel du composant PlayerList pour afficher les cartes */}
+      <PlayersList />
     </div>
   );
 }
 
+// ✅ Exportation du composant App
 export default App;

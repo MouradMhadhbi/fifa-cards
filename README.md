@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# ⚽ Projet React – Cartes de Joueurs FIFA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 Objectif du projet
+Ce projet a pour but de créer une application React simple permettant d’afficher des **cartes de joueurs de football**.  
+Chaque carte contient les informations d’un joueur (nom, équipe, nationalité, numéro, âge, image).
 
-## Available Scripts
+L’objectif est d’utiliser **React**, **React-Bootstrap** et la gestion des **props / defaultProps** tout en appliquant un peu de **style et d’interactivité**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🏗️ Structure du projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+fifa-cards/
+│
+├── src/
+│ ├── components/
+│ │ ├── Player.js # Composant individuel pour chaque joueur
+│ │ └── PlayersList.js # Liste des joueurs affichés avec .map()
+│ │
+│ ├── data/
+│ │ └── players.js # Tableau JSON contenant les données des joueurs
+│ │
+│ ├── App.css 
+│ ├── App.js # Composant racine de l’application
+│ └── index.css
+│ └── index.js # Point d’entrée React
+│
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Technologies utilisées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org/) – bibliothèque principale
+- [React-Bootstrap](https://react-bootstrap.github.io/) – composants visuels
+- [Bootstrap](https://getbootstrap.com/) – styles CSS
+- JSX – syntaxe JavaScript + XML
+- ES6 – déstructuration, opérateur de propagation (`...props`)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Installation et exécution du projet
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Créer un projet React :**
+   ```bash
+   npx create-react-app fifa-cards
+   ```
+2. **Installer React-Bootstrap :**
+   ```bash
+   npm install react-bootstrap bootstrap
+   ```
+3. **Importer le CSS Bootstrap dans App.js :**
+   ```bash
+   import 'bootstrap/dist/css/bootstrap.min.css';
+   ```
+4. **Copier les fichiers :**
+   - Player.js et PlayersList.js dans src/components/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - players.js dans src/data/
+5. **Lancer le serveur :**
+   ```bash
+   npm start;
+   ```
+6. **Ouvrir le navigateur sur :**
+    👉 http://localhost:3000
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧠 Concepts React utilisés
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Déstructuration des props dans les composants.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- defaultProps (valeurs par défaut) pour éviter les erreurs.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Opérateur de propagation (...props) pour transmettre facilement les données.
 
-## Learn More
+- Styles en ligne pour personnaliser les composants.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Effets de survol avec les événements onMouseEnter / onMouseLeave.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Itération avec .map().
+ 
+---
 
-### Code Splitting
+## 🎨 Résultat attendu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Chaque joueur s’affiche sous forme de carte avec :
 
-### Analyzing the Bundle Size
+- Une image
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Le nom du joueur
 
-### Making a Progressive Web App
+- L’équipe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- La nationalité
 
-### Advanced Configuration
+- Le numéro
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- L’âge (sans “ans” si inconnu)
 
-### Deployment
+Avec un effet de zoom au survol et une ombre douce sur la carte.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+##🧾 Auteur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Mourad Mhadhbi
+Projet React – Formation Frontend
+Année : 2025

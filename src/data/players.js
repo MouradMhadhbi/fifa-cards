@@ -20,12 +20,12 @@ const players = [
   },
   // ✅ Troisième joueur
   {
-    // name: "Cristiano Ronaldo",
-    // team: "Al Nassr",
-    // nationality: "Portugal",
-    // shirtNumber: 7,
+    name: "Cristiano Ronaldo",
+    team: "Al Nassr",
+    nationality: "Portugal",
+    shirtNumber: 7,
     age: 40,
-    // image: "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/ff39/live/1ad14330-51f3-11f0-a905-01a82a8086fe.jpg.webp"
+    image: "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/ff39/live/1ad14330-51f3-11f0-a905-01a82a8086fe.jpg.webp"
   },
   // ✅ Quatrième joueur
   {

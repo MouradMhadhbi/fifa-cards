@@ -1,5 +1,7 @@
 // ✅ Importation de React
 import React from "react";
+// ✅ Importation des styles
+import "./App.css";
 // ✅ Importation du composant PlayerList
 import PlayersList from "./components/PlayersList";
 
